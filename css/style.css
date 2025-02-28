@@ -423,21 +423,30 @@ form input {
 input::placeholder {
   color: black;
 }
+
 input[type="submit"] {
   color: white;
+  border: none;
+  padding: 0px 30px;
+  font-weight: bold;
+}
+
+.submitContainer {
   background-color: #d7363c;
   border: 2px solid #d7363c;
+  width: fit-content;
   border-radius: 50px;
-  padding: 15px 30px;
-  font-weight: bold;
-  display: block;
-  width: 35%;
-  margin: 40px auto;
+  margin: 0px auto;
+  cursor: pointer;
 }
-input[type="submit"]:hover {
+
+.submitContainer:hover {
   background-color: white;
-  color: #d7363c;
+  & * {
+    color: #d7363c;
+  }
 }
+
 .footer {
   background-color: #252525;
   padding: 60px;
